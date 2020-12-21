@@ -31,7 +31,7 @@ public class UpdateBookingTests extends BaseTest {
         bookingdates.put("checkout", "2020-05-30");
 
         body.put("bookingdates", bookingdates);
-        body.put("additionalneeds", "poo");
+        body.put("additionalneeds", "Diner");
 
         Response responseUpdate = RestAssured.given(spec).auth().preemptive().
                 basic("admin", "password123").
@@ -70,7 +70,7 @@ public class UpdateBookingTests extends BaseTest {
                 "Check out in response is not expected");
 
         String actualNeeds = responseUpdate.jsonPath().getString("additionalneeds");
-        softAssert.assertEquals(actualNeeds, "poo",
+        softAssert.assertEquals(actualNeeds, "Diner",
                 "Additional needs in response is not expected");
 
         softAssert.assertAll();

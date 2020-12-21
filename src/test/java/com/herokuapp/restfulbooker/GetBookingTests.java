@@ -12,7 +12,14 @@ public class GetBookingTests extends BaseTest {
     @Test
     public void getBookingTest() {
 
-        Response response = RestAssured.given(spec).get("booking/5");
+        Response responseCreate = createBooking();
+        responseCreate.prettyPrint();
+
+        int bookingid = responseCreate.jsonPath().getInt("bookingid");
+
+        spec.pathParam("bookingid", bookingid);
+
+        Response response = RestAssured.given(spec).get("booking/{bookingid}");
 
         response.prettyPrint();
         Assert.assertEquals(response.getStatusCode(), 200,
@@ -21,27 +28,27 @@ public class GetBookingTests extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
 
         String actualFirstName = response.jsonPath().getString("firstname");
-        softAssert.assertEquals(actualFirstName, "Mary",
+        softAssert.assertEquals(actualFirstName, "Jasna",
                 "First name in response is not expected");
 
         String actualLastName = response.jsonPath().getString("lastname");
-        softAssert.assertEquals(actualLastName, "Ericsson",
+        softAssert.assertEquals(actualLastName, "Mrs",
                 "Last name in response is not expected");
 
         int actualTotalPrice = response.jsonPath().getInt("totalprice");
-        softAssert.assertEquals(actualTotalPrice, 959,
+        softAssert.assertEquals(actualTotalPrice, 666,
                 "Total price in response is not expected");
 
         boolean actualDepositPaid = response.jsonPath().getBoolean("depositpaid");
-        softAssert.assertEquals(actualDepositPaid, true,
+        softAssert.assertEquals(actualDepositPaid, false,
                 "Deposit paid value in response is not expected");
 
         String actualCheckin = response.jsonPath().getString("bookingdates.checkin");
-        softAssert.assertEquals(actualCheckin, "2016-07-24",
+        softAssert.assertEquals(actualCheckin, "2021-04-30",
                 "Check in in response is not expected");
 
         String actualCheckout = response.jsonPath().getString("bookingdates.checkout");
-        softAssert.assertEquals(actualCheckout, "2016-09-30",
+        softAssert.assertEquals(actualCheckout, "2021-05-30",
                 "Check out in response is not expected");
 
         String actualNeeds = response.jsonPath().getString("additionalneeds");

@@ -46,7 +46,7 @@ public class CreateBookingTests extends BaseTest {
                 "Check out in response is not expected");
 
         String actualNeeds = response.jsonPath().getString("booking.additionalneeds");
-        softAssert.assertEquals(actualNeeds, "goo",
+        softAssert.assertEquals(actualNeeds, "Breakfast",
                 "Additional needs in response is not expected");
 
         softAssert.assertAll();

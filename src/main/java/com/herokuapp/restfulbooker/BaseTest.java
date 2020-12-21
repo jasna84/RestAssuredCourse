@@ -33,7 +33,7 @@ public class BaseTest {
         bookingdates.put("checkout", "2021-05-30");
 
         body.put("bookingdates", bookingdates);
-        body.put("additionalneeds", "goo");
+        body.put("additionalneeds", "Breakfast");
 
         Response response = RestAssured.given(spec).contentType(ContentType.JSON).body(body.toString()).
                 post("/booking");
