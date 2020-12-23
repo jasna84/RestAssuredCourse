@@ -1,6 +1,7 @@
 package test.java.com.herokuapp.restfulbooker;
 
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
 import io.restassured.response.Response;
 import main.java.com.herokuapp.restfulbooker.BaseTest;
 import org.testng.Assert;
@@ -52,6 +53,59 @@ public class GetBookingTests extends BaseTest {
                 "Check out in response is not expected");
 
         String actualNeeds = response.jsonPath().getString("additionalneeds");
+        softAssert.assertEquals(actualNeeds, "Breakfast",
+                "Additional needs in response is not expected");
+
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void getBookingXMLTest() {
+
+        Response responseCreate = createBooking();
+        responseCreate.prettyPrint();
+
+        int bookingid = responseCreate.jsonPath().getInt("bookingid");
+
+        spec.pathParam("bookingid", bookingid);
+
+        Header xml = new Header("Accept", "application/xml");
+        spec.header(xml);
+
+        Response response = RestAssured.given(spec).get("booking/{bookingid}");
+
+
+        response.prettyPrint();
+        Assert.assertEquals(response.getStatusCode(), 200,
+                "Status code should be 200 but it is not");
+
+        SoftAssert softAssert = new SoftAssert();
+
+        String actualFirstName = response.xmlPath().getString("booking.firstname");
+        softAssert.assertEquals(actualFirstName, "Jasna",
+                "First name in response is not expected");
+
+        String actualLastName = response.xmlPath().getString("booking.lastname");
+        softAssert.assertEquals(actualLastName, "Mrs",
+                "Last name in response is not expected");
+
+        int actualTotalPrice = response.xmlPath().getInt("booking.totalprice");
+        softAssert.assertEquals(actualTotalPrice, 666,
+                "Total price in response is not expected");
+
+        boolean actualDepositPaid = response.xmlPath().getBoolean("booking.depositpaid");
+        softAssert.assertEquals(actualDepositPaid, false,
+                "Deposit paid value in response is not expected");
+
+        String actualCheckin = response.xmlPath().getString("booking.bookingdates.checkin");
+        softAssert.assertEquals(actualCheckin, "2021-04-30",
+                "Check in in response is not expected");
+
+        String actualCheckout = response.xmlPath().getString("booking.bookingdates.checkout");
+        softAssert.assertEquals(actualCheckout, "2021-05-30",
+                "Check out in response is not expected");
+
+        String actualNeeds = response.xmlPath().getString("booking.additionalneeds");
         softAssert.assertEquals(actualNeeds, "Breakfast",
                 "Additional needs in response is not expected");
 
