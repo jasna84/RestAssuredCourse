@@ -1,11 +1,11 @@
-package test.java.com.herokuapp.restfulbooker;
+/*package test.java.pingTests;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Cookies;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
-import main.java.com.herokuapp.restfulbooker.BaseTest;
+import main.java.base.BaseTest;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
@@ -42,4 +42,4 @@ public class HealthCheckTest extends BaseTest {
 
     }
 
-}
+}*/

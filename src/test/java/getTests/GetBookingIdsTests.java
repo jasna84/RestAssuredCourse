@@ -1,8 +1,9 @@
-package test.java.com.herokuapp.restfulbooker;
+/*
+package test.java.getTests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import main.java.com.herokuapp.restfulbooker.BaseTest;
+import main.java.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -37,3 +38,4 @@ public class GetBookingIdsTests extends BaseTest {
 
 
 }
+*/

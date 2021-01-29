@@ -1,4 +1,4 @@
-package main.java.com.herokuapp.restfulbooker;
+package main.java;
 
 public class Booking {
 

@@ -1,14 +1,14 @@
-package test.java.com.herokuapp.restfulbooker;
+/*
+package test.java.postTests;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import main.java.com.herokuapp.restfulbooker.BaseTest;
+import main.java.base.BaseTest;
 
-import main.java.com.herokuapp.restfulbooker.Booking;
-import main.java.com.herokuapp.restfulbooker.BookingDates;
-import main.java.com.herokuapp.restfulbooker.BookingId;
-import org.json.JSONObject;
+import main.java.Booking;
+import main.java.BookingDates;
+import main.java.BookingId;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -112,3 +112,4 @@ public class CreateBookingTests extends BaseTest {
         softAssert.assertAll();
     }
 }
+*/

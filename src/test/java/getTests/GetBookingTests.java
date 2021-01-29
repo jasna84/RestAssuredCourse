@@ -1,9 +1,9 @@
-package test.java.com.herokuapp.restfulbooker;
+/*package test.java.getTests;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
-import main.java.com.herokuapp.restfulbooker.BaseTest;
+import main.java.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -111,4 +111,4 @@ public class GetBookingTests extends BaseTest {
 
         softAssert.assertAll();
     }
-}
+}*/
