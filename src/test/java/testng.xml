@@ -7,34 +7,34 @@
     </listeners>
     <test name = "Health Check Test">
         <classes>
-            <class name = "test.java.pingTests.HealthCheck"/>
+            <class name = "pingTests.HealthCheck"/>
         </classes>
     </test>
     <test name = "Create Token Test">
         <classes>
-            <class name = "test.java.authTests.CreateToken"/>
+            <class name = "authTests.CreateToken"/>
         </classes>
     </test>
     <test name = "Create Booking Test">
         <classes>
-            <class name = "test.java.postTests.CreateBooking"/>
+            <class name = "postTests.CreateBooking"/>
         </classes>
     </test>
     <test name = "Get Booking Test">
         <classes>
-            <class name = "test.java.getTests.GetBooking"/>
-            <class name = "test.java.getTests.GetBookingIds"/>
+            <class name = "getTests.GetBooking"/>
+            <class name = "getTests.GetBookingIds"/>
         </classes>
     </test>
     <test name = "Update Booking Test">
         <classes>
-            <class name = "test.java.putTests.UpdateBooking"/>
-            <class name = "test.java.putTests.PartialUpdateBooking"/>
+            <class name = "putTests.UpdateBooking"/>
+            <class name = "putTests.PartialUpdateBooking"/>
         </classes>
     </test>
     <test name = "Delete Booking Test">
         <classes>
-            <class name = "test.java.deleteTests.DeleteBooking"/>
+            <class name = "deleteTests.DeleteBooking"/>
         </classes>
     </test>
 </suite>
