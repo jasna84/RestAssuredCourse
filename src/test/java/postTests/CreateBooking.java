@@ -22,10 +22,10 @@ public class CreateBooking extends BaseTest {
     public void verifyCreateBooking() throws IOException {
 
         Response response;
-        log.info("Starting test: createBooking");
+        log.info("Starting test: Create Booking");
 
         String createBookingPayload = PayloadConverter.generateString("CreateBooking.json");
-        String endpointURI = URL.getEndpoint("booking");
+        String endpointURI = URL.getEndpoint("/booking");
 
         response = RESTCalls.POSTRequest(endpointURI, createBookingPayload);
 
@@ -39,6 +39,13 @@ public class CreateBooking extends BaseTest {
         log.info("Returned status code is " + statusCode);
 
         Assertions.verifyStatusCode(response, 200);
+        Assertions.verifyEqualBookingName(response, "Jim");
+        Assertions.verifyEqualBookingLastName(response, "Brown");
+        Assertions.verifyEqualBookingTotalPrice(response, 111);
+        Assertions.verifyEqualBookingDepositPaid(response, true);
+        Assertions.verifyEqualBookingCheckin(response, "2018-01-01");
+        Assertions.verifyEqualBookingCheckout(response, "2019-01-01");
+        Assertions.verifyEqualBookingAdditionalNeeds(response, "Breakfast");
     }
 
 }

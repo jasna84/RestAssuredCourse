@@ -21,10 +21,10 @@ public class CreateToken extends BaseTest {
     public void verifyCreateToken() throws IOException {
 
         Response response;
-        log.info("Starting test: verifyCreateToken" );
+        log.info("Starting test: Create Token" );
 
         String authPayload = PayloadConverter.generateString("Authentication.json");
-        String endpointURI = URL.getEndpoint("auth ");
+        String endpointURI = URL.getEndpoint("/auth ");
 
         response = RESTCalls.POSTRequest(endpointURI,authPayload);
 

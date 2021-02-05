@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "All tests">
+    <listeners>
+        <listener class-name="main.java.base.ExtentReporterNG"/>
+    </listeners>
+    <test name = "Health Check Test">
+        <classes>
+            <class name = "test.java.pingTests.HealthCheck"/>
+        </classes>
+    </test>
+    <test name = "Create Token Test">
+        <classes>
+            <class name = "test.java.authTests.CreateToken"/>
+        </classes>
+    </test>
+    <test name = "Create Booking Test">
+        <classes>
+            <class name = "test.java.postTests.CreateBooking"/>
+        </classes>
+    </test>
+    <test name = "Get Booking Test">
+        <classes>
+            <class name = "test.java.getTests.GetBooking"/>
+            <class name = "test.java.getTests.GetBookingIds"/>
+        </classes>
+    </test>
+    <test name = "Update Booking Test">
+        <classes>
+            <class name = "test.java.putTests.UpdateBooking"/>
+            <class name = "test.java.putTests.PartialUpdateBooking"/>
+        </classes>
+    </test>
+    <test name = "Delete Booking Test">
+        <classes>
+            <class name = "test.java.deleteTests.DeleteBooking"/>
+        </classes>
+    </test>
+</suite>

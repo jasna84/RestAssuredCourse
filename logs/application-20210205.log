@@ -1,0 +1,684 @@
+2021-02-05 14:46:14.790 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Get Headers and Cookies
+2021-02-05 14:46:14.798 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:17.757 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@43acd79e
+2021-02-05 14:46:17.765 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Health Check
+2021-02-05 14:46:17.768 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:18.583 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@73809e7
+2021-02-05 14:46:18.583 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:18.583 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:46:18.591 [main] INFO  test.java.authTests.CreateToken - Starting test: Create Token
+2021-02-05 14:46:18.593 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:18.681 [main] INFO  test.java.postTests.CreateBooking - Starting test: Create Booking
+2021-02-05 14:46:18.681 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:19.398 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@463561c5
+2021-02-05 14:46:19.398 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:19.408 [main] DEBUG main.java.utils.TestUtils - {"bookingid":15,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:19.408 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:19.408 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@42cc183e
+2021-02-05 14:46:20.062 [main] INFO  test.java.postTests.CreateBooking - Created booking id is 15
+2021-02-05 14:46:20.062 [main] INFO  test.java.postTests.CreateBooking - Returned status code is 200
+2021-02-05 14:46:20.062 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:20.062 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:20.062 [main] INFO  main.java.utils.TestUtils - Getting booking name
+2021-02-05 14:46:20.102 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:46:20.102 [main] INFO  main.java.utils.TestUtils - Getting booking last name
+2021-02-05 14:46:20.122 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:46:20.122 [main] INFO  main.java.utils.TestUtils - Getting booking total price
+2021-02-05 14:46:20.140 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:46:20.140 [main] INFO  main.java.utils.TestUtils - Getting deposit paid value
+2021-02-05 14:46:20.152 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:46:20.152 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:46:20.172 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:46:20.172 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:46:20.191 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:46:20.193 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:46:20.221 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:46:20.233 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:20.233 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:20.966 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@46c10083
+2021-02-05 14:46:20.966 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:20.968 [main] DEBUG main.java.utils.TestUtils - {"bookingid":16,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:20.968 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:20.968 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@28e8888d
+2021-02-05 14:46:20.978 [main] INFO  main.java.base.BaseTest - Created booking id is 16
+2021-02-05 14:46:20.978 [main] INFO  test.java.getTests.GetBooking - Starting test: Get Booking
+2021-02-05 14:46:20.978 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:21.701 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@613f7eb7
+2021-02-05 14:46:21.701 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:21.701 [main] DEBUG main.java.utils.TestUtils - {"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2021-02-05 14:46:21.701 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:21.701 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@565aa4ac
+2021-02-05 14:46:21.711 [main] INFO  test.java.getTests.GetBooking - Returned booking id is null
+2021-02-05 14:46:21.711 [main] INFO  test.java.getTests.GetBooking - Returned status code is 200
+2021-02-05 14:46:21.711 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:21.711 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:21.711 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:46:21.731 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:46:21.731 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:46:21.741 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:46:21.741 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:46:21.751 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:46:21.751 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:46:21.769 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:46:21.779 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:46:21.792 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:46:21.792 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:46:21.812 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:46:21.812 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:46:21.852 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:46:21.852 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:21.862 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:22.617 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@61b65d54
+2021-02-05 14:46:22.617 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:22.617 [main] DEBUG main.java.utils.TestUtils - {"bookingid":17,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:22.625 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:22.625 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@b2c4a8b
+2021-02-05 14:46:22.635 [main] INFO  main.java.base.BaseTest - Created booking id is 17
+2021-02-05 14:46:22.637 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:46:22.637 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:23.349 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@3b435211
+2021-02-05 14:46:23.349 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:23.349 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:23.361 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:23.361 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:24.056 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@15d114ce
+2021-02-05 14:46:24.056 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:24.056 [main] DEBUG main.java.utils.TestUtils - {"bookingid":18,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:24.056 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:24.056 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@3312f4f4
+2021-02-05 14:46:24.074 [main] INFO  main.java.base.BaseTest - Created booking id is 18
+2021-02-05 14:46:24.076 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:46:24.076 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:24.789 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@1ee5632d
+2021-02-05 14:46:24.789 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:24.789 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:24.807 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:24.807 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:25.513 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@28be7fec
+2021-02-05 14:46:25.513 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:25.513 [main] DEBUG main.java.utils.TestUtils - {"bookingid":19,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:25.513 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:25.513 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@26f0141
+2021-02-05 14:46:25.523 [main] INFO  main.java.base.BaseTest - Created booking id is 19
+2021-02-05 14:46:25.531 [main] INFO  test.java.putTests.UpdateBooking - Starting test: Update Booking
+2021-02-05 14:46:25.531 [main] INFO  main.java.base.RESTCalls - Inside PUTRequest call
+2021-02-05 14:46:26.266 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@3b4ef59f
+2021-02-05 14:46:26.266 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:26.266 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:26.266 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:26.962 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@72a8361b
+2021-02-05 14:46:26.962 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:26.962 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:26.962 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:46:26.972 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:46:26.972 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:46:26.990 [main] DEBUG main.java.utils.TestUtils - Smith
+2021-02-05 14:46:26.990 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:46:27.002 [main] DEBUG main.java.utils.TestUtils - 123
+2021-02-05 14:46:27.002 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:27.010 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:27.777 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5763a655
+2021-02-05 14:46:27.777 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:27.777 [main] DEBUG main.java.utils.TestUtils - {"bookingid":20,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:27.777 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:27.777 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@40c8067
+2021-02-05 14:46:27.797 [main] INFO  main.java.base.BaseTest - Created booking id is 20
+2021-02-05 14:46:27.797 [main] INFO  test.java.putTests.UpdateBooking - Starting test: Partial Update Booking
+2021-02-05 14:46:27.797 [main] INFO  main.java.base.RESTCalls - Inside Patch Request call
+2021-02-05 14:46:28.491 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6af87130
+2021-02-05 14:46:28.491 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:28.491 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:28.491 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:29.196 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@24a4e2c5
+2021-02-05 14:46:29.196 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:29.196 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:46:29.196 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:46:29.206 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:46:29.206 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:46:29.216 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:46:29.216 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:46:29.226 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:46:29.226 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:46:29.236 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:46:29.236 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:46:29.246 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:46:29.246 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:46:29.256 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:46:29.256 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:46:29.266 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:46:29.266 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:46:29.266 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:46:29.970 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@35e74e08
+2021-02-05 14:46:29.970 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:46:29.970 [main] DEBUG main.java.utils.TestUtils - {"bookingid":21,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:46:29.970 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:46:29.970 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@a316f6b
+2021-02-05 14:46:29.980 [main] INFO  main.java.base.BaseTest - Created booking id is 21
+2021-02-05 14:46:29.980 [main] INFO  test.java.deleteTests.DeleteBooking - Starting test: Delete Booking
+2021-02-05 14:46:29.980 [main] INFO  main.java.base.RESTCalls - Inside DELETERequest call
+2021-02-05 14:46:30.682 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@150d6eaf
+2021-02-05 14:46:30.682 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:46:30.682 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:46:30.682 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:46:31.409 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@c472300
+2021-02-05 14:46:31.409 [main] INFO  main.java.utils.TestUtils - Getting not found message
+2021-02-05 14:46:31.409 [main] DEBUG main.java.utils.TestUtils - Not Found
+2021-02-05 14:48:33.826 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Get Headers and Cookies
+2021-02-05 14:48:33.836 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:36.605 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@68565bc7
+2021-02-05 14:48:36.615 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Health Check
+2021-02-05 14:48:36.615 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:37.320 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6dc9da2d
+2021-02-05 14:48:37.330 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:37.330 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:48:37.338 [main] INFO  test.java.authTests.CreateToken - Starting test: Create Token
+2021-02-05 14:48:37.340 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:37.401 [main] INFO  test.java.postTests.CreateBooking - Starting test: Create Booking
+2021-02-05 14:48:37.401 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:38.105 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@777d191f
+2021-02-05 14:48:38.105 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:38.115 [main] DEBUG main.java.utils.TestUtils - {"bookingid":22,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:38.115 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:38.123 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@47768e74
+2021-02-05 14:48:38.787 [main] INFO  test.java.postTests.CreateBooking - Created booking id is 22
+2021-02-05 14:48:38.787 [main] INFO  test.java.postTests.CreateBooking - Returned status code is 200
+2021-02-05 14:48:38.787 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:38.787 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:38.789 [main] INFO  main.java.utils.TestUtils - Getting booking name
+2021-02-05 14:48:38.838 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:48:38.840 [main] INFO  main.java.utils.TestUtils - Getting booking last name
+2021-02-05 14:48:38.868 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:48:38.868 [main] INFO  main.java.utils.TestUtils - Getting booking total price
+2021-02-05 14:48:38.908 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:48:38.910 [main] INFO  main.java.utils.TestUtils - Getting deposit paid value
+2021-02-05 14:48:38.971 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:48:38.979 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:48:39.011 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:48:39.011 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:48:39.041 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:48:39.041 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:48:39.061 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:48:39.070 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:39.072 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:39.785 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@70b2fa10
+2021-02-05 14:48:39.785 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:39.785 [main] DEBUG main.java.utils.TestUtils - {"bookingid":23,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:39.785 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:39.785 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@7c96c85
+2021-02-05 14:48:39.795 [main] INFO  main.java.base.BaseTest - Created booking id is 23
+2021-02-05 14:48:39.795 [main] INFO  test.java.getTests.GetBooking - Starting test: Get Booking
+2021-02-05 14:48:39.804 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:40.507 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@3375ebd3
+2021-02-05 14:48:40.509 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:40.509 [main] DEBUG main.java.utils.TestUtils - {"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2021-02-05 14:48:40.509 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:40.509 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@40943a6
+2021-02-05 14:48:40.520 [main] INFO  test.java.getTests.GetBooking - Returned booking id is null
+2021-02-05 14:48:40.520 [main] INFO  test.java.getTests.GetBooking - Returned status code is 200
+2021-02-05 14:48:40.520 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:40.520 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:40.520 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:48:40.530 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:48:40.530 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:48:40.550 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:48:40.550 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:48:40.560 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:48:40.560 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:48:40.570 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:48:40.570 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:48:40.590 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:48:40.590 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:48:40.620 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:48:40.620 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:48:40.638 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:48:40.640 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:40.640 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:41.354 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5bda157e
+2021-02-05 14:48:41.354 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:41.354 [main] DEBUG main.java.utils.TestUtils - {"bookingid":24,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:41.354 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:41.354 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@67e0fd6d
+2021-02-05 14:48:41.364 [main] INFO  main.java.base.BaseTest - Created booking id is 24
+2021-02-05 14:48:41.364 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:48:41.364 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:42.069 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7ab2a07e
+2021-02-05 14:48:42.069 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:42.069 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:42.089 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:42.089 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:42.803 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@2fd39436
+2021-02-05 14:48:42.803 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:42.803 [main] DEBUG main.java.utils.TestUtils - {"bookingid":25,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:42.803 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:42.803 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@60b5e80d
+2021-02-05 14:48:42.831 [main] INFO  main.java.base.BaseTest - Created booking id is 25
+2021-02-05 14:48:42.831 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:48:42.831 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:43.536 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@51ba952e
+2021-02-05 14:48:43.536 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:43.536 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:43.557 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:43.557 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:44.271 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@38ac8968
+2021-02-05 14:48:44.271 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:44.271 [main] DEBUG main.java.utils.TestUtils - {"bookingid":26,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:44.271 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:44.271 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@17ff8810
+2021-02-05 14:48:44.281 [main] INFO  main.java.base.BaseTest - Created booking id is 26
+2021-02-05 14:48:44.289 [main] INFO  test.java.putTests.UpdateBooking - Starting test: Update Booking
+2021-02-05 14:48:44.289 [main] INFO  main.java.base.RESTCalls - Inside PUTRequest call
+2021-02-05 14:48:45.015 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6f50d55c
+2021-02-05 14:48:45.015 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:45.015 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:45.015 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:45.749 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@28b523a
+2021-02-05 14:48:45.749 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:45.749 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:45.749 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:48:45.759 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:48:45.759 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:48:45.769 [main] DEBUG main.java.utils.TestUtils - Smith
+2021-02-05 14:48:45.769 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:48:45.780 [main] DEBUG main.java.utils.TestUtils - 123
+2021-02-05 14:48:45.780 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:48:45.790 [main] DEBUG main.java.utils.TestUtils - false
+2021-02-05 14:48:45.798 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:45.798 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:46.524 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5763a655
+2021-02-05 14:48:46.524 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:46.524 [main] DEBUG main.java.utils.TestUtils - {"bookingid":27,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:46.524 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:46.532 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@40c8067
+2021-02-05 14:48:46.542 [main] INFO  main.java.base.BaseTest - Created booking id is 27
+2021-02-05 14:48:46.544 [main] INFO  test.java.putTests.PartialUpdateBooking - Starting test: Partial Update Booking
+2021-02-05 14:48:46.544 [main] INFO  main.java.base.RESTCalls - Inside Patch Request call
+2021-02-05 14:48:47.248 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6af87130
+2021-02-05 14:48:47.248 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:47.248 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:47.248 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:47.990 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@24a4e2c5
+2021-02-05 14:48:47.990 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:47.990 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:48:47.990 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:48:48.002 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:48:48.002 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:48:48.012 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:48:48.012 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:48:48.032 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:48:48.032 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:48:48.042 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:48:48.042 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:48:48.052 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:48:48.052 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:48:48.062 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:48:48.062 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:48:48.080 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:48:48.082 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:48:48.082 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:48:48.817 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@35e74e08
+2021-02-05 14:48:48.817 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:48:48.817 [main] DEBUG main.java.utils.TestUtils - {"bookingid":28,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:48:48.817 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:48:48.817 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@a316f6b
+2021-02-05 14:48:48.827 [main] INFO  main.java.base.BaseTest - Created booking id is 28
+2021-02-05 14:48:48.827 [main] INFO  test.java.deleteTests.DeleteBooking - Starting test: Delete Booking
+2021-02-05 14:48:48.827 [main] INFO  main.java.base.RESTCalls - Inside DELETERequest call
+2021-02-05 14:48:49.530 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@591f6f83
+2021-02-05 14:48:49.530 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:48:49.530 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:48:49.530 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:48:50.233 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6826b70f
+2021-02-05 14:48:50.233 [main] INFO  main.java.utils.TestUtils - Getting not found message
+2021-02-05 14:48:50.233 [main] DEBUG main.java.utils.TestUtils - Not Found
+2021-02-05 14:49:56.534 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Get Headers and Cookies
+2021-02-05 14:49:56.544 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:49:59.432 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5b275811
+2021-02-05 14:49:59.440 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Health Check
+2021-02-05 14:49:59.442 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:00.156 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@436bd4df
+2021-02-05 14:50:00.156 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:00.156 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:50:00.166 [main] INFO  test.java.authTests.CreateToken - Starting test: Create Token
+2021-02-05 14:50:00.166 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:00.234 [main] INFO  test.java.postTests.CreateBooking - Starting test: Create Booking
+2021-02-05 14:50:00.234 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:00.951 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5a49af50
+2021-02-05 14:50:00.951 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:00.961 [main] DEBUG main.java.utils.TestUtils - {"bookingid":29,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:00.961 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:00.961 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@49cb1baf
+2021-02-05 14:50:01.623 [main] INFO  test.java.postTests.CreateBooking - Created booking id is 29
+2021-02-05 14:50:01.623 [main] INFO  test.java.postTests.CreateBooking - Returned status code is 200
+2021-02-05 14:50:01.625 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:01.625 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:01.625 [main] INFO  main.java.utils.TestUtils - Getting booking name
+2021-02-05 14:50:01.686 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:50:01.686 [main] INFO  main.java.utils.TestUtils - Getting booking last name
+2021-02-05 14:50:01.704 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:50:01.704 [main] INFO  main.java.utils.TestUtils - Getting booking total price
+2021-02-05 14:50:01.726 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:50:01.726 [main] INFO  main.java.utils.TestUtils - Getting deposit paid value
+2021-02-05 14:50:01.746 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:50:01.746 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:50:01.766 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:50:01.766 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:50:01.805 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:50:01.805 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:50:01.817 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:50:01.827 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:01.827 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:02.531 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7135ce0a
+2021-02-05 14:50:02.531 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:02.531 [main] DEBUG main.java.utils.TestUtils - {"bookingid":30,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:02.531 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:02.531 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@617449dd
+2021-02-05 14:50:02.551 [main] INFO  main.java.base.BaseTest - Created booking id is 30
+2021-02-05 14:50:02.551 [main] INFO  test.java.getTests.GetBooking - Starting test: Get Booking
+2021-02-05 14:50:02.551 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:03.265 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6637a365
+2021-02-05 14:50:03.265 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:03.265 [main] DEBUG main.java.utils.TestUtils - {"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2021-02-05 14:50:03.265 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:03.265 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@1310fcb0
+2021-02-05 14:50:03.283 [main] INFO  test.java.getTests.GetBooking - Returned booking id is null
+2021-02-05 14:50:03.283 [main] INFO  test.java.getTests.GetBooking - Returned status code is 200
+2021-02-05 14:50:03.283 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:03.283 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:03.283 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:50:03.296 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:50:03.296 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:50:03.306 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:50:03.306 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:50:03.316 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:50:03.316 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:50:03.336 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:50:03.336 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:50:03.346 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:50:03.346 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:50:03.366 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:50:03.366 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:50:03.376 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:50:03.384 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:03.386 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:04.131 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7ca492d9
+2021-02-05 14:50:04.131 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:04.131 [main] DEBUG main.java.utils.TestUtils - {"bookingid":31,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:04.131 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:04.131 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@14fc9bd
+2021-02-05 14:50:04.141 [main] INFO  main.java.base.BaseTest - Created booking id is 31
+2021-02-05 14:50:04.141 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:50:04.141 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:04.845 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@4b03cbad
+2021-02-05 14:50:04.845 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:04.845 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:04.865 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:04.865 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:05.600 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@3b11620a
+2021-02-05 14:50:05.600 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:05.600 [main] DEBUG main.java.utils.TestUtils - {"bookingid":32,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:05.600 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:05.600 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@2fd1ad8a
+2021-02-05 14:50:05.620 [main] INFO  main.java.base.BaseTest - Created booking id is 32
+2021-02-05 14:50:05.620 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:50:05.620 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:06.332 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@48bc2fce
+2021-02-05 14:50:06.332 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:06.332 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:06.344 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:06.344 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:07.068 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@2e6d76ba
+2021-02-05 14:50:07.068 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:07.068 [main] DEBUG main.java.utils.TestUtils - {"bookingid":33,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:07.068 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:07.068 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@22a6d75c
+2021-02-05 14:50:07.086 [main] INFO  main.java.base.BaseTest - Created booking id is 33
+2021-02-05 14:50:07.088 [main] INFO  test.java.putTests.UpdateBooking - Starting test: Update Booking
+2021-02-05 14:50:07.088 [main] INFO  main.java.base.RESTCalls - Inside PUTRequest call
+2021-02-05 14:50:07.852 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@28d739f1
+2021-02-05 14:50:07.852 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:07.852 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:07.852 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:08.564 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@52ecc989
+2021-02-05 14:50:08.564 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:08.564 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:08.564 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:50:08.576 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:50:08.576 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:50:08.586 [main] DEBUG main.java.utils.TestUtils - Smith
+2021-02-05 14:50:08.586 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:50:08.605 [main] DEBUG main.java.utils.TestUtils - 123
+2021-02-05 14:50:08.605 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:50:08.617 [main] DEBUG main.java.utils.TestUtils - false
+2021-02-05 14:50:08.617 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:50:08.627 [main] DEBUG main.java.utils.TestUtils - 2018-02-01
+2021-02-05 14:50:08.627 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:50:08.637 [main] DEBUG main.java.utils.TestUtils - 2019-02-01
+2021-02-05 14:50:08.645 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:50:08.657 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:50:08.657 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:08.657 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:09.371 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5e193ef5
+2021-02-05 14:50:09.371 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:09.371 [main] DEBUG main.java.utils.TestUtils - {"bookingid":34,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:09.371 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:09.371 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@106c988
+2021-02-05 14:50:09.381 [main] INFO  main.java.base.BaseTest - Created booking id is 34
+2021-02-05 14:50:09.381 [main] INFO  test.java.putTests.PartialUpdateBooking - Starting test: Partial Update Booking
+2021-02-05 14:50:09.381 [main] INFO  main.java.base.RESTCalls - Inside Patch Request call
+2021-02-05 14:50:10.113 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@597d48ca
+2021-02-05 14:50:10.113 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:10.113 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:10.113 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:10.829 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@103c97ff
+2021-02-05 14:50:10.829 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:10.829 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:50:10.829 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:50:10.839 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:50:10.839 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:50:10.849 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:50:10.849 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:50:10.859 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:50:10.859 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:50:10.869 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:50:10.869 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:50:10.880 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:50:10.888 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:50:10.898 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:50:10.898 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:50:10.910 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:50:10.910 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:50:10.910 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:50:11.634 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7bf018dd
+2021-02-05 14:50:11.634 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:50:11.634 [main] DEBUG main.java.utils.TestUtils - {"bookingid":35,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:50:11.634 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:50:11.634 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@15a8cebd
+2021-02-05 14:50:11.644 [main] INFO  main.java.base.BaseTest - Created booking id is 35
+2021-02-05 14:50:11.644 [main] INFO  test.java.deleteTests.DeleteBooking - Starting test: Delete Booking
+2021-02-05 14:50:11.644 [main] INFO  main.java.base.RESTCalls - Inside DELETERequest call
+2021-02-05 14:50:12.368 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@1491cd6c
+2021-02-05 14:50:12.368 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:50:12.368 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:50:12.368 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:50:13.062 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@30036a18
+2021-02-05 14:50:13.062 [main] INFO  main.java.utils.TestUtils - Getting not found message
+2021-02-05 14:50:13.062 [main] DEBUG main.java.utils.TestUtils - Not Found
+2021-02-05 14:51:45.588 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Get Headers and Cookies
+2021-02-05 14:51:45.598 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:48.356 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7af3874e
+2021-02-05 14:51:48.356 [main] INFO  test.java.pingTests.HealthCheck - Starting test: Health Check
+2021-02-05 14:51:48.356 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:49.060 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7be1ce6a
+2021-02-05 14:51:49.068 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:49.068 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:51:49.070 [main] INFO  test.java.authTests.CreateToken - Starting test: Create Token
+2021-02-05 14:51:49.070 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:49.804 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@57545c3f
+2021-02-05 14:51:49.804 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:49.814 [main] DEBUG main.java.utils.TestUtils - {"token":"a934921507c7d79"}
+2021-02-05 14:51:49.814 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:49.814 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@360e9c06
+2021-02-05 14:51:50.408 [main] INFO  test.java.authTests.CreateToken - Token value is: a934921507c7d79
+2021-02-05 14:51:50.416 [main] INFO  test.java.postTests.CreateBooking - Starting test: Create Booking
+2021-02-05 14:51:50.418 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:51.133 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@4d4436d0
+2021-02-05 14:51:51.133 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:51.133 [main] DEBUG main.java.utils.TestUtils - {"bookingid":36,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:51.133 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:51.133 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@39da5e49
+2021-02-05 14:51:51.153 [main] INFO  test.java.postTests.CreateBooking - Created booking id is 36
+2021-02-05 14:51:51.153 [main] INFO  test.java.postTests.CreateBooking - Returned status code is 200
+2021-02-05 14:51:51.153 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:51.153 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:51.153 [main] INFO  main.java.utils.TestUtils - Getting booking name
+2021-02-05 14:51:51.183 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:51:51.183 [main] INFO  main.java.utils.TestUtils - Getting booking last name
+2021-02-05 14:51:51.203 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:51:51.203 [main] INFO  main.java.utils.TestUtils - Getting booking total price
+2021-02-05 14:51:51.223 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:51:51.223 [main] INFO  main.java.utils.TestUtils - Getting deposit paid value
+2021-02-05 14:51:51.242 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:51:51.242 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:51:51.262 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:51:51.262 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:51:51.302 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:51:51.302 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:51:51.314 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:51:51.314 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:51:51.314 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:52.039 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@7c46c9c3
+2021-02-05 14:51:52.039 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:52.039 [main] DEBUG main.java.utils.TestUtils - {"bookingid":37,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:52.039 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:52.039 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@7197b07f
+2021-02-05 14:51:52.049 [main] INFO  main.java.base.BaseTest - Created booking id is 37
+2021-02-05 14:51:52.049 [main] INFO  test.java.getTests.GetBooking - Starting test: Get Booking
+2021-02-05 14:51:52.049 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:52.763 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@35cec305
+2021-02-05 14:51:52.763 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:52.763 [main] DEBUG main.java.utils.TestUtils - {"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2021-02-05 14:51:52.763 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:52.763 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@237add
+2021-02-05 14:51:52.773 [main] INFO  test.java.getTests.GetBooking - Returned booking id is null
+2021-02-05 14:51:52.773 [main] INFO  test.java.getTests.GetBooking - Returned status code is 200
+2021-02-05 14:51:52.773 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:52.773 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:52.773 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:51:52.783 [main] DEBUG main.java.utils.TestUtils - Jim
+2021-02-05 14:51:52.783 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:51:52.801 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:51:52.801 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:51:52.813 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:51:52.813 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:51:52.823 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:51:52.823 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:51:52.843 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:51:52.843 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:51:52.862 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:51:52.862 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:51:52.874 [main] DEBUG main.java.utils.TestUtils - Breakfast
+2021-02-05 14:51:52.874 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:51:52.882 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:53.598 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@2e0fdbe9
+2021-02-05 14:51:53.598 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:53.598 [main] DEBUG main.java.utils.TestUtils - {"bookingid":38,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:53.598 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:53.598 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@16a3cc88
+2021-02-05 14:51:53.618 [main] INFO  main.java.base.BaseTest - Created booking id is 38
+2021-02-05 14:51:53.618 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:51:53.618 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:54.323 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@3db65c0d
+2021-02-05 14:51:54.323 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:54.323 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:54.343 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:51:54.343 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:55.037 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@a0c5be
+2021-02-05 14:51:55.037 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:55.045 [main] DEBUG main.java.utils.TestUtils - {"bookingid":39,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:55.045 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:55.045 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@6424e613
+2021-02-05 14:51:55.055 [main] INFO  main.java.base.BaseTest - Created booking id is 39
+2021-02-05 14:51:55.055 [main] INFO  test.java.getTests.GetBookingIds - Starting test: Get Booking Id Numbers
+2021-02-05 14:51:55.055 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:55.749 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6544899b
+2021-02-05 14:51:55.749 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:55.749 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:55.761 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:51:55.761 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:56.485 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@723e3c17
+2021-02-05 14:51:56.493 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:56.493 [main] DEBUG main.java.utils.TestUtils - {"bookingid":40,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:56.493 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:56.493 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@4ffced4e
+2021-02-05 14:51:56.505 [main] INFO  main.java.base.BaseTest - Created booking id is 40
+2021-02-05 14:51:56.505 [main] INFO  test.java.putTests.UpdateBooking - Starting test: Update Booking
+2021-02-05 14:51:56.505 [main] INFO  main.java.base.RESTCalls - Inside PUTRequest call
+2021-02-05 14:51:57.229 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5dbab232
+2021-02-05 14:51:57.229 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:57.229 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:57.229 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:51:57.981 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@14d8e132
+2021-02-05 14:51:57.981 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:57.981 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:57.981 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:51:57.993 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:51:57.993 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:51:58.003 [main] DEBUG main.java.utils.TestUtils - Smith
+2021-02-05 14:51:58.003 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:51:58.013 [main] DEBUG main.java.utils.TestUtils - 123
+2021-02-05 14:51:58.013 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:51:58.023 [main] DEBUG main.java.utils.TestUtils - false
+2021-02-05 14:51:58.023 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:51:58.034 [main] DEBUG main.java.utils.TestUtils - 2018-02-01
+2021-02-05 14:51:58.034 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:51:58.044 [main] DEBUG main.java.utils.TestUtils - 2019-02-01
+2021-02-05 14:51:58.044 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:51:58.054 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:51:58.054 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:51:58.062 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:51:58.757 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6cc48a17
+2021-02-05 14:51:58.765 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:51:58.765 [main] DEBUG main.java.utils.TestUtils - {"bookingid":41,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:51:58.765 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:51:58.765 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@289f15e9
+2021-02-05 14:51:58.777 [main] INFO  main.java.base.BaseTest - Created booking id is 41
+2021-02-05 14:51:58.777 [main] INFO  test.java.putTests.PartialUpdateBooking - Starting test: Partial Update Booking
+2021-02-05 14:51:58.777 [main] INFO  main.java.base.RESTCalls - Inside Patch Request call
+2021-02-05 14:51:59.482 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@71166348
+2021-02-05 14:51:59.482 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:51:59.490 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:51:59.490 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:52:00.206 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@401e02b4
+2021-02-05 14:52:00.206 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:52:00.206 [main] DEBUG main.java.utils.TestUtils - 200
+2021-02-05 14:52:00.206 [main] INFO  main.java.utils.TestUtils - Getting name
+2021-02-05 14:52:00.216 [main] DEBUG main.java.utils.TestUtils - Jack
+2021-02-05 14:52:00.216 [main] INFO  main.java.utils.TestUtils - Getting last name
+2021-02-05 14:52:00.226 [main] DEBUG main.java.utils.TestUtils - Brown
+2021-02-05 14:52:00.226 [main] INFO  main.java.utils.TestUtils - Getting total price
+2021-02-05 14:52:00.236 [main] DEBUG main.java.utils.TestUtils - 111
+2021-02-05 14:52:00.236 [main] INFO  main.java.utils.TestUtils - Getting paid value
+2021-02-05 14:52:00.254 [main] DEBUG main.java.utils.TestUtils - true
+2021-02-05 14:52:00.254 [main] INFO  main.java.utils.TestUtils - Getting checkin date
+2021-02-05 14:52:00.264 [main] DEBUG main.java.utils.TestUtils - 2018-01-01
+2021-02-05 14:52:00.266 [main] INFO  main.java.utils.TestUtils - Getting checkout date
+2021-02-05 14:52:00.276 [main] DEBUG main.java.utils.TestUtils - 2019-01-01
+2021-02-05 14:52:00.276 [main] INFO  main.java.utils.TestUtils - Getting additional needs value
+2021-02-05 14:52:00.286 [main] DEBUG main.java.utils.TestUtils - Dinner
+2021-02-05 14:52:00.286 [main] INFO  main.java.base.BaseTest - Execute precondition: create booking
+2021-02-05 14:52:00.286 [main] INFO  main.java.base.RESTCalls - Inside POSTRequest call
+2021-02-05 14:52:00.980 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@6b832551
+2021-02-05 14:52:00.980 [main] INFO  main.java.utils.TestUtils - Converting json response to string
+2021-02-05 14:52:00.980 [main] DEBUG main.java.utils.TestUtils - {"bookingid":42,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+2021-02-05 14:52:00.980 [main] INFO  main.java.utils.TestUtils - Parsing response to json
+2021-02-05 14:52:00.980 [main] DEBUG main.java.utils.TestUtils - io.restassured.path.json.JsonPath@150d6eaf
+2021-02-05 14:52:00.990 [main] INFO  main.java.base.BaseTest - Created booking id is 42
+2021-02-05 14:52:00.990 [main] INFO  test.java.deleteTests.DeleteBooking - Starting test: Delete Booking
+2021-02-05 14:52:00.990 [main] INFO  main.java.base.RESTCalls - Inside DELETERequest call
+2021-02-05 14:52:01.704 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5d66ae3a
+2021-02-05 14:52:01.704 [main] INFO  main.java.utils.TestUtils - Getting status code
+2021-02-05 14:52:01.704 [main] DEBUG main.java.utils.TestUtils - 201
+2021-02-05 14:52:01.704 [main] INFO  main.java.base.RESTCalls - Inside GETRequest call
+2021-02-05 14:52:02.507 [main] DEBUG main.java.base.RESTCalls - io.restassured.internal.RequestSpecificationImpl@5f3b84bd
+2021-02-05 14:52:02.507 [main] INFO  main.java.utils.TestUtils - Getting not found message
+2021-02-05 14:52:02.507 [main] DEBUG main.java.utils.TestUtils - Not Found

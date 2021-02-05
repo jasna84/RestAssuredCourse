@@ -19,7 +19,7 @@ public class BaseTest {
     public String createBooking() throws IOException {
 
         Response response;
-        log.info("Starting test: createBooking");
+        log.info("Execute precondition: create booking");
 
         String createBookingPayload = PayloadConverter.generateString("CreateBooking.json");
         String endpointURI = URL.getEndpoint("/booking");
@@ -33,6 +33,28 @@ public class BaseTest {
         log.info("Created booking id is " + bookingID);
 
         return bookingID;
+
+    }
+
+    @Test
+    public String createToken() throws IOException {
+
+        Response response;
+        log.info("Execute precondition: create token");
+
+        String authPayload = PayloadConverter.generateString("Authentication.json");
+        String endpointURI = URL.getEndpoint("auth ");
+
+        response = RESTCalls.POSTRequest(endpointURI,authPayload);
+
+        String strResponse = TestUtils.getJSONResponseString(response);
+        JsonPath jsonRes = TestUtils.jSONParser(strResponse);
+
+        String token = jsonRes.getString("token");
+        System.out.println(token);
+        log.info("Token value is: " + token);
+
+        return token;
 
     }
 }
